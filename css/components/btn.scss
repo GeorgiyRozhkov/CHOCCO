@@ -1,4 +1,6 @@
 .btn{
+  border: none;
+  cursor: pointer;
   display: inline-block;
   font-weight: 800;
   font-size: 16px;
@@ -6,9 +8,29 @@
   text-decoration: none;
   border-radius: 100px;
   padding: 19px 43px;
-  &_theme_light{
+  &_color_white{
     background: #fff;
-    color: #365A49
+    color: #365A49;
+    &:hover{
+      background: #365A49;
+      color: #fff;
+    }
   }
-
+  &_color_green{
+    background: #2E4E3F;
+    color: #fff;
+    &:hover{
+      background: #fff ;
+    color: #2E4E3F;
+    }
+  }
+  &_color_transparent{
+    background: transparent;
+    color: black;
+    text-transform: none;
+    padding-left: 10px;
+    &:hover{
+      color: #497870;
+    }
+  }
 }

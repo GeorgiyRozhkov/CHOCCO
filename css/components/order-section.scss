@@ -1,0 +1,20 @@
+.order-section{
+  position: relative;
+  background: url("../../img/png/berryBG.png") center center no-repeat;
+  .section__title{
+    color: #365A49;
+    margin-bottom: 50px;
+  }
+  &::before{
+    position: absolute;
+    content: url("../../img/png/leaf4.png");
+    bottom: 8%;
+    right: 6%;
+  }
+  &::after{
+    position: absolute;
+    content: url("../../img/png/berry6.png");
+    bottom: 9%;
+    left: 2%;
+  }
+}

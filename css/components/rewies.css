@@ -22,7 +22,7 @@
   position: absolute;
   content: url("../../img/png/pattern3.png");
   right: 0;
-  top: 0;
+  top: 20px;
 }
 
 .rewies__display-inner {
@@ -43,6 +43,7 @@
 
 .rewies__content {
   width: 56%;
+  padding-top: 10px;
 }
 
 .rewies__title {
@@ -52,7 +53,7 @@
 }
 
 .rewies__text {
-  margin-bottom: 25px;
+  margin-bottom: 10px;
 }
 
 .rewies__author {
