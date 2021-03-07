@@ -1,0 +1,6 @@
+.contacts {
+  display: flex;
+}
+.contacts__img {
+  margin-right: 6px;
+}

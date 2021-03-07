@@ -1,0 +1,422 @@
+@import url("https://fonts.googleapis.com/css2?family=Alegreya+Sans:wght@300;400;700;800&display=swap");
+.wrap {
+  width: 100%;
+  min-width: 960px;
+  min-height: 100%;
+  overflow: hidden;
+  position: relative;
+}
+
+.container {
+  width: 940px;
+  margin: 0 auto;
+  position: relative;
+}
+
+html, body {
+  height: 100%;
+}
+
+body {
+  font-family: "Alegreya Sans", Helvetica, serif;
+  color: #666;
+  font-size: 18px;
+  line-height: 1.42;
+  background: #fff;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  margin: 0;
+  position: relative;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+}
+ul li {
+  list-style: none;
+}
+
+table {
+  border-collapse: collapse;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+h1, h2 {
+  text-transform: uppercase;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin-top: 0;
+  font-weight: bold;
+}
+
+p {
+  padding: 0;
+  margin: 0;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+footer {
+  position: relative;
+  width: 100%;
+}
+
+.hero {
+  background: url("../../img/png/leaf1.png") right -3% bottom 93px no-repeat, url("../../img/png/berry2.png") right 27% bottom 22px no-repeat, url("../../img/png/bars.png") right center/50% auto no-repeat, url("../../img/png/pattern.png") right -40px bottom no-repeat;
+  background-color: #61C4D9;
+  color: #fff;
+  display: flex;
+  height: 100vh;
+  min-height: 650px;
+  position: relative;
+}
+.hero::before {
+  content: url("../../img/png/berry1.png");
+  right: 53px;
+  bottom: -71px;
+  position: absolute;
+}
+.hero::after {
+  content: url("../../img/png/leaf2.png");
+  right: 240px;
+  bottom: -57px;
+  position: absolute;
+}
+.hero__content {
+  width: 46%;
+  margin-bottom: 64px;
+}
+.hero__title {
+  font-weight: bold;
+  line-height: 1.1;
+  font-size: 48px;
+  margin-bottom: 17px;
+}
+.hero__text {
+  font-size: 21px;
+  margin-bottom: 32px;
+  padding-right: 10%;
+}
+.hero__icons-section {
+  display: flex;
+  width: 50%;
+}
+
+.hero__container {
+  position: relative;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 24px 0 50px;
+}
+.hero__container::after {
+  position: absolute;
+  content: url("../../img/png/leaf3.png");
+  left: -44px;
+  bottom: -53px;
+}
+
+.menu__list {
+  display: flex;
+  margin: 0 42px;
+}
+
+.menu__item {
+  margin-right: 27px;
+}
+.menu__item:last-child {
+  margin-right: 0;
+}
+
+.feauter {
+  display: flex;
+  font-size: 16px;
+}
+.feauter__text {
+  line-height: 112%;
+  flex: 1;
+}
+
+.feauter__icon {
+  margin-right: 7px;
+}
+.feauter__icon:last-child {
+  margin-right: 0;
+}
+
+.feauter__img {
+  width: 100%;
+}
+
+.feauters {
+  display: flex;
+  justify-content: space-between;
+}
+
+.feauters__item {
+  margin-right: 20px;
+}
+.feauters__item:last-child {
+  margin-right: 0;
+}
+
+.btn {
+  display: inline-block;
+  font-weight: 800;
+  font-size: 16px;
+  text-transform: uppercase;
+  text-decoration: none;
+  border-radius: 100px;
+  padding: 19px 43px;
+}
+.btn_theme_light {
+  background: #fff;
+  color: #365A49;
+}
+
+.header {
+  display: flex;
+  height: 45px;
+  align-items: center;
+  padding-top: 24px;
+  margin-bottom: 74px;
+}
+
+.contacts__phone {
+  display: flex;
+  font-size: 24px;
+  align-items: center;
+}
+
+.contacts__img {
+  margin-right: 6px;
+}
+.contacts__img-elem {
+  width: 12px;
+  height: 12px;
+}
+
+.why {
+  position: relative;
+  background: url("../../img/png/pattern2.png") left top 43% no-repeat;
+}
+.why::before {
+  content: url("../../img/png/berry3.png");
+  position: absolute;
+  bottom: -118px;
+  left: -35px;
+}
+
+.qualities {
+  display: flex;
+  justify-content: center;
+}
+
+.qualities__item {
+  flex: 1;
+  padding: 0 3%;
+  position: relative;
+}
+.qualities__item:first-child {
+  padding-left: 0;
+}
+.qualities__item:last-child {
+  padding-right: 0;
+}
+.qualities__item:last-child::before {
+  display: none;
+}
+.qualities__item::before {
+  content: url("../../img/png/separator.png");
+  position: absolute;
+  top: 30px;
+  right: 0;
+  transform: translateX(50%);
+}
+
+.quality {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.quality__img {
+  margin-bottom: 10px;
+}
+
+.quality__img-wrapper {
+  display: inline-block;
+  width: 128px;
+  height: 128px;
+  position: relative;
+  border-radius: 50%;
+  background: #f2f5f4;
+  overflow: hidden;
+}
+
+.quality__icon {
+  width: 65px;
+  height: 68px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.quality__title {
+  color: #292929;
+  font-weight: bold;
+  font-size: 27px;
+  margin-bottom: 18px;
+  text-transform: none;
+}
+
+.section {
+  height: 100vh;
+  min-height: 650px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.section__title {
+  color: #292929;
+  font-weight: bold;
+  font-size: 48px;
+  margin-bottom: 60px;
+  text-align: center;
+}
+
+.headline {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 46px;
+  text-align: center;
+}
+
+.headline__title {
+  margin-bottom: 12px;
+}
+
+.headline__subtitle {
+  font-weight: 300;
+  font-size: 18px;
+  text-align: center;
+  padding: 0 26%;
+}
+
+.rewies__display {
+  position: relative;
+  padding: 42px;
+  background: #F8FAF9;
+  margin-bottom: 15px;
+  overflow: hidden;
+}
+.rewies__display::before {
+  content: "";
+  display: block;
+  position: absolute;
+  background: #fff;
+  width: 83px;
+  height: 83px;
+  border-radius: 50%;
+  left: 50%;
+  transform: translateX(-50%);
+  top: -61px;
+}
+.rewies__display::after {
+  display: block;
+  position: absolute;
+  content: url("../../img/png/pattern3.png");
+  right: 0;
+  top: 0;
+}
+
+.rewies__display-inner {
+  display: flex;
+}
+
+.rewies__avatar {
+  width: 253px;
+  height: 264px;
+  margin-right: 40px;
+}
+
+.rewies__avatar-img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.rewies__content {
+  width: 56%;
+}
+
+.rewies__title {
+  color: #292929;
+  font-size: 27px;
+  margin-bottom: 12px;
+}
+
+.rewies__text {
+  margin-bottom: 25px;
+}
+
+.rewies__author {
+  color: #292929;
+  font-weight: bold;
+}
+
+.rewies__switcher {
+  display: flex;
+  justify-content: center;
+}
+
+.interactive-avatar {
+  width: 74px;
+  height: 74px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin-right: 6px;
+  border: 6px solid transparent;
+  position: relative;
+}
+.interactive-avatar:last-child {
+  margin-right: 0;
+}
+.interactive-avatar_active {
+  border: 6px solid #365a49;
+}
+
+.interactive-avatar__link {
+  position: absolute;
+  display: block;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+}
+
+.interactive-avatar__img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}

@@ -1,0 +1,17 @@
+.rewies-section{
+position: relative;
+  &:after{
+    display: block;
+    position: absolute;
+    content: url("../../img/png/pattern4.png");
+    left: 0;
+    bottom: 0;
+  }
+  &:before{
+    display: block;
+    position: absolute;
+    content: url("../../img/png/berry5.png");
+    left: 0;
+    bottom: 0;
+  }
+}

@@ -1,0 +1,11 @@
+.breadcrumbs__list {
+  display: flex;
+  flex-direction: column;
+}
+
+.breadcrumbs__item {
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+  background: #fff;
+}

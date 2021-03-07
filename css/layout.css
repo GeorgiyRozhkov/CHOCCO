@@ -1,0 +1,42 @@
+html, body {
+  height: 100%;
+}
+
+body {
+  font-family: "Alegreya Sans", Helvetica, serif;
+  color: #ffffff;
+  font-size: 18px;
+  line-height: 1.42;
+  background: #fff;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  margin: 0;
+}
+
+ul {
+  list-style-type: none;
+  padding-inline-start: 0;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+h1 {
+  text-transform: uppercase;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+footer {
+  position: relative;
+  width: 100%;
+}
