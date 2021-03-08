@@ -1,25 +1,56 @@
 .hero {
-  height: 650px;
-  background: #61C4D9;
+  background: url("../../img/png/leaf1.png") right -3% bottom 93px no-repeat, url("../../img/png/berry2.png") right 27% bottom 22px no-repeat, url("/img/png/pattern.png") right -40px bottom no-repeat;
+  background-color: #61C4D9;
+  color: #fff;
+  display: flex;
+  height: 100vh;
+  min-height: 650px;
+  position: relative;
 }
-
+.hero::before {
+  content: url("../../img/png/berry1.png");
+  right: 53px;
+  bottom: -71px;
+  position: absolute;
+}
+.hero::after {
+  content: url("../../img/png/leaf2.png");
+  right: 240px;
+  bottom: -57px;
+  position: absolute;
+}
 .hero__content {
-  max-width: 350px;
+  width: 46%;
   margin-bottom: 64px;
 }
-
 .hero__title {
-  font-weight: 700;
+  font-weight: bold;
+  line-height: 1.1;
   font-size: 48px;
   margin-bottom: 17px;
 }
-
 .hero__text {
   font-size: 21px;
   margin-bottom: 32px;
+  padding-right: 10%;
 }
-
 .hero__icons-section {
   display: flex;
-  max-height: 60px;
+  width: 50%;
+}
+
+.hero__container {
+  position: relative;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 24px 0 50px;
+  background: url("../../img/png/bars.png") right center/50% auto no-repeat;
+}
+.hero__container::after {
+  position: absolute;
+  content: url("../../img/png/leaf3.png");
+  left: -44px;
+  bottom: -53px;
 }
