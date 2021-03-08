@@ -1,8 +1,8 @@
 .why{
   position: relative;
-  background: url("../../img/png/pattern2.png") left top 43% no-repeat;
+  background: url("../img/png/pattern2.png") left top 43% no-repeat;
   &::before{
-    content: url("../../img/png/berry3.png");
+    content: url("../img/png/berry3.png");
     position: absolute;
     bottom: -118px;
     left: -35px;

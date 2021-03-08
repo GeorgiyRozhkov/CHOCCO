@@ -8,13 +8,13 @@
   position: relative;
 }
 .hero::before {
-  content: url("../../img/png/berry1.png");
+  content: url("../img/png/berry1.png");
   right: 53px;
   bottom: -71px;
   position: absolute;
 }
 .hero::after {
-  content: url("../../img/png/leaf2.png");
+  content: url("../img/png/leaf2.png");
   right: 240px;
   bottom: -57px;
   position: absolute;
@@ -46,11 +46,11 @@
   flex-direction: column;
   justify-content: space-between;
   padding: 24px 0 50px;
-  background: url("../../img/png/bars.png") right center/50% auto no-repeat;
+  background: url("../img/png/bars.png") right center/50% auto no-repeat;
 }
 .hero__container::after {
   position: absolute;
-  content: url("../../img/png/leaf3.png");
+  content: url("../img/png/leaf3.png");
   left: -44px;
   bottom: -53px;
 }
