@@ -17,7 +17,9 @@
       <section class="hero">
         <div class="container hero__container">
           <header class="header">
-            <img src="./img/svg/logo.svg" alt=logo>
+            <svg class="header__logo">
+              <use xlink:href="./sprites.svg#logo"></use>
+            </svg>
             <nav class="menu">
               <ul class="menu__list">
                 <li class="menu__item">
@@ -46,7 +48,9 @@
             <adress class="contacts">
               <a href="tel:+78009039090" class="contacts__phone">
                 <span class="contacts__img">
-                  <img src="./img/svg/Tel.svg" alt="phone" class="contacts__img-elem">
+                  <svg class="contacts__img-elem">
+                    <use xlink:href="./sprites.svg#tel"></use>
+                  </svg>
                 </span>
                 <span class="contacts__text">88009039090</span>
               </a>
@@ -61,19 +65,25 @@
             <ul class="feauters">
               <li class="feauters__item feauter">
                 <div class="feauter__icon">
-                  <img src="./img/svg/Leaf.svg" alt="leaf" class="feauter__img">
+                  <svg class="feauter__img">
+                    <use xlink:href="./sprites.svg#leaf"></use>
+                  </svg>
                 </div>
                 <div class="feauter__text">100% натуральный продукт</div>
               </li>
               <li class="feauters__item feauter">
                 <div class="feauter__icon">
-                  <img src="./img/svg/TRACK.svg" alt="track" class="feauter__img">
+                  <svg class="feauter__img">
+                    <use xlink:href="./sprites.svg#track"></use>
+                  </svg>
                 </div>
                 <div class="feauter__text">3-5 дней доставка по РФ</div>
               </li>
               <li class="feauters__item feauter">
                 <div class="feauter__icon">
-                  <img src="./img/svg/CASE.svg" alt="case" class="feauter__img">
+                  <svg class="feauter__img">
+                    <use xlink:href="./sprites.svg#case"></use>
+                  </svg>
                 </div>
                 <div class="feauter__text">Не портит фигуру</div>
               </li>
@@ -92,7 +102,9 @@
               <li class="qualities__item quality">
                 <div class="quality__img">
                   <div class="quality__img-wrapper">
-                    <img src="./img/svg/man-icon.svg" alt="man" class="quality__icon">
+                    <svg class="quality__icon">
+                      <use xlink:href="./sprites.svg#human"></use>
+                    </svg>
                   </div>
                 </div>
                 <div class="quality__content">
@@ -106,7 +118,9 @@
               <li class="qualities__item quality">
                 <div class="quality__img">
                   <div class="quality__img-wrapper">
-                    <img src="./img/svg/smile-icon.svg" alt="smile" class="quality__icon">
+                    <svg class="quality__icon">
+                      <use xlink:href="./sprites.svg#smile"></use>
+                    </svg>
                   </div>
                 </div>
                 <div class="quality__content">
@@ -120,7 +134,9 @@
               <li class="qualities__item quality">
                 <div class="quality__img">
                   <div class="quality__img-wrapper">
-                    <img src="./img/svg/muscul-icon.svg" alt="muscul" class="quality__icon">
+                    <svg class="quality__icon">
+                      <use xlink:href="./sprites.svg#muscul"></use>
+                    </svg>
                   </div>
                 </div>
                 <div class="quality__content">
@@ -235,8 +251,13 @@
                 <div class="form__controls">
                   <label class="radio radio_checkbox">
                     <input type="checkbox"  class="radio__elem">
-                    <div class="radio__visible"></div>
+                    <div class="radio__visible radio__visible_checkbox">
+                      <svg class="radio__checkbox-mark" width="10" height="8" viewBox="0 0 10 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M9.44954 0.551587C8.80734 -0.184046 7.70642 -0.184046 7.06422 0.459633L3.66973 3.86193L2.93578 3.1263C2.29358 2.48262 1.19266 2.48262 0.550461 3.1263H0.458717C-0.183484 3.76998 -0.183484 4.87343 0.458717 5.5171L2.47707 7.54009C2.84404 7.90791 3.30275 7.99986 3.66973 7.99986C4.12844 7.99986 4.49542 7.81595 4.86239 7.54009L9.44954 2.94239C10.0917 2.29871 10.0917 1.19526 9.44954 0.551587Z" fill="#497870"/>
+                      </svg>
+                    </div>
                     <div class="radio__title">Не перезванивать</div>
+                    
                   </label>
                 </div>
               </div>
@@ -247,8 +268,58 @@
             </div>
           </div>
           </form>
-          </div>
-        </div>
+
+      </section>
+      <section class="section map-section">
+          <footer class="footer">
+            <div class="footer__col footer__col_left">
+              <adress class="foot-contacts ">
+                <span class="foot-contacts__text">Москва, ул.Новый Арбат, д.31/12</span>
+                <a href="tel:+78009039090" class="foot-contacts__phone">
+                  <span class="foot-contacts__img">
+                    <svg class="foot-contacts__img-elem">
+                      <use xlink:href="./sprites.svg#tel"></use>
+                    </svg>
+                  </span>
+                  <span class="foot-contacts__phone-numb">88009039090</span>
+                </a>
+              </adress>
+            </div>
+            <div class="footer__col footer__col_right">
+              <socials class="footer_socials social">
+                <ul class="social__list">
+                  <li class="social__item">
+                    <a href="#" class="social__link">
+                      <svg class="social__icon">
+                        <use xlink:href="./sprites.svg#vk"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="social__item">
+                    <a href="#" class="social__link">
+                      <svg class="social__icon">
+                        <use xlink:href="./sprites.svg#fb"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="social__item">
+                    <a href="#" class="social__link">
+                      <svg class="social__icon">
+                        <use xlink:href="./sprites.svg#ig"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="social__item">
+                    <a href="#" class="social__link">
+                      <svg class="social__icon">
+                        <use xlink:href="./sprites.svg#tw"></use>
+                      </svg>
+                    </a>
+                  </li>
+                </ul>
+              </socials>
+            </div>
+          </footer>
       </section>
     </div>
   </div>
