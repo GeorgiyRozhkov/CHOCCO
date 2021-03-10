@@ -1,0 +1,10 @@
+.feauters {
+  display: flex;
+  justify-content: space-between; }
+
+.feauters__item {
+  margin-right: 20px; }
+  .feauters__item:last-child {
+    margin-right: 0; }
+
+/*# sourceMappingURL=feauters.css.map */

@@ -1,0 +1,46 @@
+.form{
+  display: flex;
+  
+}
+.form__col{
+  flex: 1;
+  margin-right: rem(27px);
+  &:last-child{
+    margin-right: 0;
+  }
+}
+.form__row{
+  display: flex;
+  margin-bottom: rem(10px);
+}
+.form__block{
+  flex: 1;
+  margin-right: rem(17px);
+  &:last-child{
+    margin-right: 0;
+  }
+}
+.form__input{
+  width: 100%;
+  border: 3px solid transparent;
+  padding: rem(18px) rem(12px);
+  border-radius: 4px;
+  &:focus{
+    border-color: #DEE2BD;
+    outline: none;
+  }
+  &_textarea{
+    height: rem(152px);
+    resize: none;
+    width: 100%;
+  }
+}
+.form__controls{
+  display: flex;
+  flex-wrap: wrap;
+}
+.form__radio{
+  margin-bottom: rem(45px);
+  padding-left: rem(7px);
+  padding-top: rem(21px);
+}

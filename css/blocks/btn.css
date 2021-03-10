@@ -1,0 +1,31 @@
+.btn {
+  border: none;
+  cursor: pointer;
+  display: inline-block;
+  font-weight: 800;
+  font-size: 16px;
+  text-transform: uppercase;
+  text-decoration: none;
+  border-radius: 100px;
+  padding: 19px 43px; }
+  .btn_color_white {
+    background: #fff;
+    color: $darkGreen; }
+    .btn_color_white:hover {
+      background: $darkGreen;
+      color: #fff; }
+  .btn_color_green {
+    background: #2E4E3F;
+    color: #fff; }
+    .btn_color_green:hover {
+      background: #fff;
+      color: #2E4E3F; }
+  .btn_color_transparent {
+    background: transparent;
+    color: black;
+    text-transform: none;
+    padding-left: 10px; }
+    .btn_color_transparent:hover {
+      color: #497870; }
+
+/*# sourceMappingURL=btn.css.map */

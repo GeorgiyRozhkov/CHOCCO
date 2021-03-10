@@ -1,0 +1,16 @@
+.feauter {
+  display: flex;
+  font-size: 16px; }
+  .feauter__text {
+    line-height: 112%;
+    flex: 1; }
+
+.feauter__icon {
+  margin-right: 7px; }
+  .feauter__icon:last-child {
+    margin-right: 0; }
+
+.feauter__img {
+  width: 100%; }
+
+/*# sourceMappingURL=feauter.css.map */

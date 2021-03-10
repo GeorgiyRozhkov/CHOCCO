@@ -1,0 +1,22 @@
+.footer{
+  display: flex;
+  justify-content: space-between;
+  height: rem(93px);
+  position: absolute;
+  bottom: 0;
+  background-color: #fff;
+}
+.footer__col{
+  display: flex;
+  align-items: center;
+  &_left{
+    margin-left: rem(84px);
+  }
+  &_right{
+    margin-right: rem(74px);
+    height: 100%;
+  }
+}
+.footer__socials{
+  height: 100%;
+}

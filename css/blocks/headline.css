@@ -1,0 +1,18 @@
+.headline {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 46px;
+  text-align: center; }
+
+.headline__title {
+  margin-bottom: 12px; }
+
+.headline__subtitle {
+  font-weight: 300;
+  font-size: 18px;
+  text-align: center;
+  padding: 0 26%; }
+
+/*# sourceMappingURL=headline.css.map */

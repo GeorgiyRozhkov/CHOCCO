@@ -1,0 +1,17 @@
+.headline{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: rem(46px);
+  text-align: center;
+}
+.headline__title{
+  margin-bottom: rem(12px);
+}
+.headline__subtitle{
+  font-weight: 300;
+  font-size: rem(18px);
+  text-align: center;
+  padding: 0 26%;
+}

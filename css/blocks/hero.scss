@@ -1,0 +1,61 @@
+.hero{
+  background: url("../img/png/leaf1.png") right -3% bottom 93px no-repeat,
+  url("../img/png/berry2.png") right 27% bottom 22px no-repeat,
+  url("../img/png/pattern.png") right -40px bottom no-repeat;
+  
+  background-color: $blue;
+  color: #fff;
+  display: flex;
+  height: 100vh;
+  min-height: rem(650px);
+  position: relative;
+  &::before{
+    content: url("../img/png/berry1.png");
+    right: rem(53px);
+    bottom: rem(-71px);
+    position: absolute;
+  }
+  &::after{
+    content: url("../img/png/leaf2.png");
+    right: rem(240px);
+    bottom: rem(-57px);
+    position: absolute;
+  }
+  &__content{
+    width: 46%;
+   margin-bottom: rem(64px);
+}
+  &__title{
+  font-weight: bold;
+  line-height: 1.1;
+  font-size: rem(48px);
+  margin-bottom: rem(17px);
+}
+  &__text{
+  font-size: rem(21px);
+  margin-bottom: rem(32px);
+  padding-right: 10%;
+}
+  &__icons-section{
+  display: flex;
+  width: 50%;
+}
+}
+.hero__container{
+  position: relative;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: rem(24px) 0 rem(50px);
+  background: url("../img/png/bars.png") right center / 50% auto no-repeat;
+  &::after{
+    position: absolute;
+    content: url("../img/png/leaf3.png");
+    left: rem(-44px);
+    bottom: rem(-53px);
+  }
+}
+
+
+
