@@ -1,36 +1,54 @@
 $containerWidth: 940px;
 $baseFontSize: 18px;
 
-//color
+//breakpoints
+$tablets: 768px;
+$phones: 480px;
 
-$darkGreen: #365A49;
-$ligtBlue: #C6F7FF;
+//colors
+
+$darkGreen: #696e6c;
+$green: #497870;
+$lightBlue: #C6F7FF;
 $blue: #61C4D9;
 $black: #292929;
-$gray: #666666;
+$grey: #666666;
+
+
 
 @import url('https://fonts.googleapis.com/css2?family=Alegreya+Sans:wght@300;400;700;800&display=swap');
+@import "media";
 @import "layout";
+
+
 //components
-@import "components/hero";
-@import "components/menu";
-@import "components/feauter";
-@import "components/feauters";
-@import "components/btn";
-@import "components/header";
-@import "components/contacts";
-@import "components/why";
-@import "components/qualities";
-@import "components/quality";
-@import "components/section";
-@import "components/headline";
-@import "components/rewies";
-@import "components/interactive-avatar";
-@import "components/rewies-section";
-@import "components/form";
-@import "components/order-section";
-@import "components/radio";
-@import "components/fix-menu";
+@import "blocks/section";
+@import "blocks/hero";
+@import "blocks/menu";
+@import "blocks/feauter";
+@import "blocks/feauters";
+@import "blocks/btn";
+@import "blocks/header";
+@import "blocks/phone-numb";
+@import "blocks/hamburger";
+@import "blocks/why";
+@import "blocks/qualities";
+@import "blocks/quality";
+@import "blocks/headline";
+@import "blocks/rewies";
+@import "blocks/interactive-avatar";
+@import "blocks/rewies-section";
+@import "blocks/form";
+@import "blocks/order-section";
+@import "blocks/radio";
+@import "blocks/fix-menu";
+@import "blocks/map-section.scss";
+@import "blocks/footer-container";
+@import "blocks/footer";
+@import "blocks/social";
+
+
+
 
 
 

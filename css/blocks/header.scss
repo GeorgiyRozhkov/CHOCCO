@@ -1,11 +1,37 @@
 .header{
   display: flex;
   height: rem(45px);
-  align-items: center;
+  align-items: flex-start;
   padding-top: rem(24px);
   margin-bottom: rem(74px);
+  justify-content: space-between;
 }
 .header__logo{
   width: rem(53px);
   height: rem(39px);
+  flex-shrink: 0;
+  fill: #fff;
+}
+.header__phone-numb{
+  .phone-numb__phone{
+    display: flex;
+    font-size: rem(24px);
+    align-items: center;
+    white-space: nowrap;
+  }
+  .phone-numb__img{
+    margin-right: rem(6px);
+    &-elem{
+      width: rem(13px);
+      height: rem(14px);
+      fill: #fff;
+      flex-shrink: 0;
+    }
+  }
+  .phone-numb__text{
+    color: #fff;
+  }
+  @include tablets{
+    display: none;
+  }
 }

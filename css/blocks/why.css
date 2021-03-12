@@ -1,0 +1,10 @@
+.why {
+  position: relative;
+  background: url("../img/png/pattern2.png") left top 43% no-repeat; }
+  .why::before {
+    content: url("../img/png/berry3.png");
+    position: absolute;
+    bottom: -118px;
+    left: -35px; }
+
+/*# sourceMappingURL=why.css.map */

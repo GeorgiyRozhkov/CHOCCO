@@ -1,0 +1,22 @@
+.qualities {
+  display: flex;
+  justify-content: center; }
+
+.qualities__item {
+  flex: 1;
+  padding: 0 3%;
+  position: relative; }
+  .qualities__item:first-child {
+    padding-left: 0; }
+  .qualities__item:last-child {
+    padding-right: 0; }
+    .qualities__item:last-child::before {
+      display: none; }
+  .qualities__item::before {
+    content: url("../img/png/separator.png");
+    position: absolute;
+    top: 30px;
+    right: 0;
+    transform: translateX(50%); }
+
+/*# sourceMappingURL=qualities.css.map */
