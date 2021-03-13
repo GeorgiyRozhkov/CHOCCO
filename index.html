@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=1100px, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>CHOCCO</title>
 
   <link rel="stylesheet" href="./css/main.css">
@@ -45,16 +45,21 @@
                 </li>
               </ul>
             </nav>
-            <adress class="contacts">
-              <a href="tel:+78009039090" class="contacts__phone">
-                <span class="contacts__img">
-                  <svg class="contacts__img-elem">
+            <adress class="phone-numb header__phone-numb">
+              <a href="tel:+78009039090" class="phone-numb__phone ">
+                <span class="phone-numb__img">
+                  <svg class="phone-numb__img-elem">
                     <use xlink:href="./sprites.svg#tel"></use>
                   </svg>
                 </span>
-                <span class="contacts__text">88009039090</span>
+                <span class="phone-numb__text">88009039090</span>
               </a>
             </adress>
+            <a href="#" class="hamburger">
+              <span class="hamburger__line"></span>
+              <span class="hamburger__line"></span>
+              <span class="hamburger__line"></span>
+            </a>
           </header>
           <div class="hero__content">
             <h1 class="hero__title">натуральные шоколадные батончики</h1>
@@ -272,20 +277,18 @@
       </section>
       <section class="section map-section">
           <footer class="footer">
-            <div class="footer__col footer__col_left">
-              <adress class="foot-contacts ">
-                <span class="foot-contacts__text">Москва, ул.Новый Арбат, д.31/12</span>
-                <a href="tel:+78009039090" class="foot-contacts__phone">
-                  <span class="foot-contacts__img">
-                    <svg class="foot-contacts__img-elem">
+            <div class="container footer-container">
+              <adress class="phone-numb ">
+                <span class="phone-numb__text">Москва, ул.Новый Арбат, д.31/12</span>
+                <a href="tel:+78009039090" class="phone-numb__phone">
+                  <span class="phone-numb__img">
+                    <svg class="phone-numb__img-elem">
                       <use xlink:href="./sprites.svg#tel"></use>
                     </svg>
                   </span>
-                  <span class="foot-contacts__phone-numb">88009039090</span>
+                  <span class="phone-numb__number">88009039090</span>
                 </a>
               </adress>
-            </div>
-            <div class="footer__col footer__col_right">
               <socials class="footer_socials social">
                 <ul class="social__list">
                   <li class="social__item">
@@ -317,7 +320,7 @@
                     </a>
                   </li>
                 </ul>
-              </socials>
+              </socials>       
             </div>
           </footer>
       </section>
