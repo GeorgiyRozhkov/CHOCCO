@@ -13,6 +13,10 @@
   position: relative;
 }
 
+:hover {
+  transition: 0.4s;
+}
+
 html {
   font-size: 18px;
 }
@@ -247,6 +251,9 @@ footer {
 .menu__item:last-child {
   margin-right: 0;
 }
+.menu__item :hover {
+  text-shadow: 0 0 0px #fff;
+}
 
 .menu__link {
   white-space: nowrap;
@@ -299,10 +306,10 @@ footer {
 }
 .btn_color_white {
   background: #fff;
-  color: #696e6c;
+  color: #2E4E3F;
 }
 .btn_color_white:hover {
-  background: #696e6c;
+  background: #2E4E3F;
   color: #fff;
 }
 .btn_color_green {
@@ -407,6 +414,10 @@ footer {
 }
 
 .hamburger {
+  position: fixed;
+  top: 5%;
+  right: 2%;
+  z-index: 100;
   flex-direction: column;
   height: 24px;
   width: 26px;
@@ -708,7 +719,7 @@ footer {
   margin-right: 0;
 }
 .interactive-avatar_active {
-  border: 6px solid #696e6c;
+  border: 6px solid #2E4E3F;
 }
 
 .interactive-avatar__link {
@@ -858,7 +869,7 @@ footer {
   background: url("../img/png/berryBG.png") center center no-repeat;
 }
 .order-section .section__title {
-  color: #696e6c;
+  color: #2E4E3F;
   margin-bottom: 2.7777777778rem;
 }
 .order-section::before {
@@ -924,7 +935,7 @@ footer {
   height: 0.7222222222rem;
   width: 0.7222222222rem;
   border-radius: 50%;
-  background: #696e6c;
+  background: #2E4E3F;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -962,7 +973,7 @@ footer {
   display: block;
   width: 1rem;
   height: 1rem;
-  border: 1px solid transparent;
+  border: 1px solid #61C4D9;
   border-radius: 50%;
   position: relative;
 }
