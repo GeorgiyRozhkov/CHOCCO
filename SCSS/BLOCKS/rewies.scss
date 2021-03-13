@@ -1,0 +1,95 @@
+
+.rewies__display{
+  position: relative;
+  padding: rem(42px);
+  background: #F8FAF9;
+  margin-bottom: rem(15px);
+  overflow: hidden;
+  @include tablets{
+    padding: rem(39px);
+  }
+  &::before{
+    content: "";
+    display: block;
+    position: absolute;
+    background: #fff;
+    width: rem(83px);
+    height: rem(83px);
+    border-radius: 50%;
+    left: 50%;
+    transform: translateX(-50%);
+    top: rem(-61px);
+    @include tablets{
+      top: rem(-50px);
+    }
+    @include phones{
+        display: none;
+      }
+  }
+  &::after{
+    display: block;
+    position: absolute;
+    content: url("../img/png/pattern3.png");
+    right: 0;
+    top: rem(20px);
+  }
+}
+.rewies__display-inner{
+  display: flex;
+  @include tablets{
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+  }
+}
+.rewies__avatar{
+  width: rem(253px);
+  height: rem(264px);
+  margin-right: rem(40px);
+  @include tablets{
+    width: 130px;
+    height: 130px;
+    margin-right: rem(0px);
+    margin-top: rem(25px);
+    margin-bottom: rem(25px);
+  }
+}
+.rewies__avatar-img{
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+
+}
+.rewies__content{
+  width: 56%;
+  padding-top: rem(10px);
+  @include tablets{
+    width: 100%;
+  }
+}
+.rewies__title{
+  color: $black;
+  font-size: rem(27px);
+  margin-bottom: rem(12px);
+}
+.rewies__text{
+  
+  margin-bottom: rem(10px);
+  
+}
+.rewies__author{
+color: $black;
+font-weight: bold;
+@include phones{
+  position: absolute;
+  bottom: -4%;
+  left: 32%;
+}
+}
+.rewies__switcher{
+  display: flex;
+  justify-content: center;
+  @include tablets{
+    padding-top: rem(32px);
+  }
+}

@@ -1,0 +1,36 @@
+.btn{
+  border: none;
+  cursor: pointer;
+  display: inline-block;
+  font-weight: 800;
+  font-size: rem(16px);
+  text-transform: uppercase;
+  text-decoration: none;
+  border-radius: rem(100px);
+  padding: rem(19px) rem(43px);
+  &_color_white{
+    background: #fff;
+    color: $darkGreen;
+    &:hover{
+      background: $darkGreen;
+      color: #fff;
+    }
+  }
+  &_color_green{
+    background: #2E4E3F;
+    color: #fff;
+    &:hover{
+      background: #fff ;
+    color: #2E4E3F;
+    }
+  }
+  &_color_transparent{
+    background: transparent;
+    color: black;
+    text-transform: none;
+    padding-left: rem(10px);
+    &:hover{
+      color: #497870;
+    }
+  }
+}

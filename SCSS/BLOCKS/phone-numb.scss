@@ -1,0 +1,34 @@
+.phone-numb{
+  font-size: rem(21px);
+  @include phones{
+    margin-bottom: rem(19px);
+  }
+}
+.phone-numb__text{
+  @include phones{
+    display: block;
+    margin-bottom: rem(12px);
+  }
+}
+.phone-numb__phone{
+  display: flex;
+  align-items: center;
+  @include phones{
+    justify-content: center;
+  }
+}
+.phone-numb__text{
+  color: $black;
+}
+.phone-numb__img{
+  margin-right: rem(6px);
+  &-elem{
+  fill: $green;
+  width: rem(13px);
+  height: rem(14px);
+}
+}
+
+.phone-numb__number{
+  color: $green;
+}
