@@ -2,7 +2,11 @@
   @include tablets{
     display: none;
   }
-
+  &_modal{
+      @include tablets{
+        display: flex;
+    }
+  }
 }
 
 .menu__list{
@@ -11,6 +15,13 @@
   flex-wrap: wrap;
   justify-content: center;
   padding-top: rem(5px);
+  &_modal{
+    flex-direction: column;
+    align-items: center;
+  }
+}
+.menu__list_modal .menu__item{
+  margin-right: 0;
 }
 .menu__item{
   margin-right: rem(27px);
