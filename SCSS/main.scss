@@ -1,4 +1,4 @@
-$containerWidth: 940px;
+$containerWidth: 1100px;
 $baseFontSize: 18px;
 
 //breakpoints
@@ -46,6 +46,10 @@ $grey: #666666;
 @import "blocks/footer-container";
 @import "blocks/footer";
 @import "blocks/social";
+@import "blocks/overlay";
+@import "blocks/slider";
+@import "blocks/slide";
+
 
 
 

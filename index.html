@@ -55,7 +55,7 @@
                 <span class="phone-numb__text">88009039090</span>
               </a>
             </adress>
-            <a href="#" class="hamburger">
+            <a href="#" class="hamburger" id="openBtn">
               <span class="hamburger__line"></span>
               <span class="hamburger__line"></span>
               <span class="hamburger__line"></span>
@@ -155,6 +155,69 @@
             </ul>
         </div>
       </section>
+      <section class="section slider__section">
+        <div class="container slider__container">
+         <div class="slider__controls">
+            <a href="#" class="slider__btn slider__btn_right">
+              <svg class="slider__arrow">
+                <use xlink:href="./sprites.svg#arrowRight"></use>
+              </svg>
+            </a>  
+            <a href="#" class="slider__btn slider__btn_left">
+              <svg class="slider__arrow">
+                <use xlink:href="./sprites.svg#arrowLeft"></use>
+              </svg>
+            </a>
+         </div>
+          <div class="slider__list-wrap">
+            <ul class="slider__list">
+              <li class="slider__item slide">
+                <div class="slide__pic">
+                  <div class="slide__img-wrap">
+                    <img src="./img/png/slideBars.png" alt="bars" class="slide__img">
+                  </div>
+                </div>
+                <div class="slide__subject">
+                  <div class="slide__drop-wrap">
+                    <div class="slide__drop">
+                      <svg class="slide__drop-pic">
+                        <use xlink:href="./sprites.svg#dropBar"></use>
+                      </svg>
+                      <div class="slide__drop-text">состав</div>
+                    </div>
+                  </div>
+                  <div class="slide__title-wrap">
+                    <h2 class="slide__title">Батончик "Гранола Виноград"</h2>
+                  </div>
+                  <div class="slide__content">
+                    <div class="slide__desc">
+                      <p>Гранола из винограда, грецкого ореха и кунжутных семечек. В состав также входят: сухое молоко, заменитель сахара и какао бобы.</p>
+                    </div>
+                    <div class="slide__info-wrap">
+                      <div class="slide__info slide__info_row_top">
+                        <div class="slide__values">
+                          Калорийность<br><b>110 ккал</b>
+                        </div>
+                        <div class="slide__values">
+                          Вес<br><b>95 грамм</b>
+                        </div>
+                      </div>
+                      <div class="slide__info slide__info_row_bot">
+                        <div class="slide__price">
+                          140 ₽
+                        </div>
+                        <div class="slide__btn">
+                          <a href="#" class="btn btn_color_green">заказать</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
       <section class="section rewies-section">
         <div class="container">
           <h2 class="section__title rewies-section__title">Отзывы</h2> 
@@ -201,23 +264,27 @@
               <div class="form__row">
                 <label class="form__block">
                   <div class="form__title">Имя</div>
-                  <input type="text" class="form__input">
+                  <input type="text" class="form__input" name="name" required>
+                  <div class="form__error"></div>
                 </label>
                 <label class="form__block">
                   <div class="form__title">Телефон</div>
-                  <input type="text" class="form__input">
+                  <input type="text" class="form__input" name="phone" id="phone_num" required>
+                  <div class="form__error"></div>
                 </label>
               </div>
               <div class="form__row">
                 <label class="form__block">
                   <div class="form__title">Улица</div>
-                  <input type="text" class="form__input">
+                  <input type="text" class="form__input" name="street" required>
+                  <div class="form__error"></div>
                 </label>
               </div>
               <div class="form__row">
                 <label class="form__block">
                   <div class="form__title">Дом</div>
-                  <input type="text" class="form__input">
+                  <input type="text" class="form__input" name="house" required>
+                  <div class="form__error"></div>
                 </label>
                 <label class="form__block">
                   <div class="form__title">Корпус</div>
@@ -267,13 +334,12 @@
                 </div>
               </div>
               <div class="form__btns">
-                <input type="submit" value="Заказать" class="btn btn_color_green">
+                <input type="submit" value="Заказать" class="btn btn_color_green" id="sendBtn">
                 <input type="reset" value="Очистить" class="btn btn_color_transparent">
               </div>
             </div>
           </div>
           </form>
-
       </section>
       <section class="section map-section">
           <footer class="footer">
@@ -339,5 +405,37 @@
     <li class="fix-menu__item"><a href="" class="fix-menu__link"></a></li>
   </ul>
 </nav>
+<div class="overlay" id="overlay">
+  <nav class="menu menu_modal">
+    <ul class="menu__list menu__list_modal">
+      <li class="menu__item">
+        <a href="#" class="menu__link">О нас</a>
+      </li>
+      <li class="menu__item">
+        <a href="#" class="menu__link">Батончики</a>
+      </li>
+      <li class="menu__item">
+        <a href="#" class="menu__link">Команда</a>
+      </li>
+      <li class="menu__item">
+        <a href="#" class="menu__link">Меню</a>
+      </li>
+      <li class="menu__item">
+        <a href="#" class="menu__link">Отзывы</a>
+      </li>
+      <li class="menu__item">
+        <a href="#" class="menu__link">Как мы работаем</a>
+      </li>
+      <li class="menu__item">
+        <a href="#" class="menu__link">Контакты</a>
+      </li>
+    </ul>
+  </nav>
+  <svg class="overlay__cross">
+    <use xlink:href="./sprites.svg#cross"></use>
+  </svg>
+</div>
+<script src="./JS/overlay.js"></script>
+<script src="./JS/validateForm.js"></script>
 </body>
 </html>

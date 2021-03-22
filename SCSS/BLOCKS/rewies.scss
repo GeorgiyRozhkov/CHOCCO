@@ -7,6 +7,7 @@
   overflow: hidden;
   @include tablets{
     padding: rem(39px);
+    overflow: visible;
   }
   &::before{
     content: "";
@@ -47,8 +48,8 @@
   height: rem(264px);
   margin-right: rem(40px);
   @include tablets{
-    width: 130px;
-    height: 130px;
+    width: rem(130px);
+    height: rem(130px);
     margin-right: rem(0px);
     margin-top: rem(25px);
     margin-bottom: rem(25px);
@@ -82,7 +83,7 @@ color: $black;
 font-weight: bold;
 @include phones{
   position: absolute;
-  bottom: -4%;
+  bottom: -6%;
   left: 32%;
 }
 }
@@ -91,5 +92,8 @@ font-weight: bold;
   justify-content: center;
   @include tablets{
     padding-top: rem(32px);
+  }
+  @include phones{
+    padding-top: rem(65px);
   }
 }
