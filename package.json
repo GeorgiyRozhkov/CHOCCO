@@ -1,0 +1,50 @@
+{
+  "name": "CHOCCO",
+  "version": "1.0.0",
+  "description": "��#\u0000 \u0000C\u0000H\u0000O\u0000C\u0000C\u0000O\u0000 \u0000b\u0000y\u0000 \u0000G\u0000e\u0000o\u0000r\u0000g\u0000i\u0000y\u0000 \u0000R\u0000o\u0000z\u0000h\u0000k\u0000o\u0000v\u0000\r\u0000 \u0000",
+  "main": "index.js",
+  "scripts": {
+    "gulp": "gulp"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/GeorgiyRozhkov/CHOCCO.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/GeorgiyRozhkov/CHOCCO/issues"
+  },
+  "homepage": "https://github.com/GeorgiyRozhkov/CHOCCO#readme",
+  "devDependencies": {
+    "@babel/core": "^7.13.14",
+    "@babel/preset-env": "^7.13.12",
+    "browser-sync": "^2.26.14",
+    "gulp": "^4.0.2",
+    "gulp-autoprefixer": "^7.0.1",
+    "gulp-babel": "^8.0.0",
+    "gulp-clean-css": "^4.3.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-group-css-media-queries": "^1.2.2",
+    "gulp-rm": "^2.0.0",
+    "gulp-sass": "^4.1.0",
+    "gulp-sass-glob": "^1.1.0",
+    "gulp-smile-px2rem": "^0.1.0",
+    "gulp-sourcemaps": "^3.0.0",
+    "gulp-svg-sprite": "^1.5.0",
+    "gulp-svgo": "^2.2.1",
+    "gulp-uglify": "^3.0.2",
+    "node-sass": "^5.0.0"
+  },
+  "dependencies": {
+    "autoprefixer": "^6.5.4",
+    "jquery": "^3.6.0",
+    "normalize.css": "^8.0.1"
+  },
+  "browserslist": [
+    "last 2 version",
+    "> 1%",
+    "IE 10"
+  ]
+}

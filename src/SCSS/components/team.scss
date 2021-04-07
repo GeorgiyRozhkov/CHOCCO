@@ -1,0 +1,103 @@
+.team{
+text-align: center;
+  &__container{
+    height: 100%;
+    padding-top: rem(57px);
+  }
+  &__title-wrap{
+    margin-bottom: rem(53px);
+  }
+  &__list{
+    display: flex;
+    @include tablets{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+    &_desktop{
+      @include tablets{
+        display: none;
+      }
+    }
+    &_mobile{
+      display: none;
+      justify-content: center;
+      @include tablets{
+        display: flex;
+      }
+    }
+  }
+  &__item{
+    width: calc((100% / 4) - 20px);
+    margin-right: rem(20px);
+    @include tablets{
+      margin-bottom: rem(16px);
+      margin-right: 0;
+      width: 100%;
+    }
+    &:nth-child(4n){
+      margin-right: 0;
+    }
+  }
+  &__avatar-wrap{
+    margin-bottom: rem(21px);
+  }
+  &__name{
+    position: relative;
+    font-size: rem(21px);
+    line-height: rem(25px);
+    color: $black;
+    font-weight: bold;
+    margin-bottom: rem(8px);
+    cursor: pointer;
+    &_after::after{
+      content: "";
+      position: absolute;
+      border: 7px solid transparent;
+      border-bottom: 9px solid $darkGreen;
+      margin-left: rem(4px);
+      transition: transform 0.7s;
+      transform: rotate(180deg) translateY(-50%);
+    }
+    &::after{
+      content: "";
+      position: absolute;
+      border: 7px solid transparent;
+      border-bottom: 9px solid $darkGreen;
+      margin-left: rem(4px);
+      transition: transform 0.7s;
+    }
+    @include tablets{
+      margin-bottom: rem(15px);
+    }
+  }
+  &__desc{
+    font-size: rem(18px);
+    line-height: rem(22px);
+    color: $grey;
+    @include tablets{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+    &-wrap{
+      height: 0;
+      transition: height 0.7s;
+      overflow: hidden;
+    }
+  }
+  &__info{
+    @include tablets{
+      width: 50%;
+    }
+  }
+  &__position{
+    color: $black;
+    margin-bottom: rem(4px);
+    @include tablets{
+      font-weight: bold;
+    }
+  }
+}

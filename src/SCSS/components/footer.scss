@@ -1,0 +1,13 @@
+.footer{
+  display: flex;
+  height: rem(93px);
+  position: absolute;
+  bottom: 0;
+  background-color: #fff;
+  @include phones{
+    height: rem(150px);
+  }
+}
+.footer__socials{
+  height: 100%;
+}

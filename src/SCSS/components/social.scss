@@ -1,0 +1,18 @@
+.social__list{
+  display: flex;
+}
+.social__item{
+  margin-right: rem(14px);
+  &:last-child{
+    margin-right: 0;
+  }
+}
+.social__icon{
+  cursor: pointer;
+  fill: #B3B3B3;
+  width: rem(20px);
+  height: rem(20px);
+  &:hover{
+    fill: $black;
+  }
+}

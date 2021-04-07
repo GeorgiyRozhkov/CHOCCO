@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>CHOCCO</title>
 
-  <link rel="stylesheet" href="./dist/main.css">
+  <link rel="stylesheet" href="main.min.css">
   <!-- <link rel="stylesheet" href="JS/fancybox-master/dist/jquery.fancybox.min.css"> -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css" integrity="sha512-H9jrZiiopUdsLpg94A333EfumgUBpO9MdbxStdeITo+KEIMaNfHNvwyjjDJb+ERPaRS6DpyRlKbvPUasNItRyw==" crossorigin="anonymous" />
 
@@ -184,7 +184,7 @@
                     <div class="slide__drop-wrap">
                       <div class="slide__drop">
                         <svg class="slide__drop-pic">
-                          <use xlink:href="./sprites.svg#dropBar"></use>
+                          <use xlink:href="./sprites.svg#slideBar"></use>
                         </svg>
                         <div class="slide__drop-text">состав</div>
                       </div>
@@ -285,7 +285,7 @@
                     <div class="slide__drop-wrap">
                       <div class="slide__drop">
                         <svg class="slide__drop-pic">
-                          <use xlink:href="./sprites.svg#dropBar"></use>
+                          <use xlink:href="./sprites.svg#sldeBar"></use>
                         </svg>
                         <div class="slide__drop-text">состав</div>
                       </div>
@@ -700,7 +700,9 @@
                     <span class="player__duration-estimate">0:00</span>
                   </div>
                   <div class="player__volume-icon">
-                    <img src="/img/svg/volume.svg" alt="volume" class="player__volume-img">
+                    <svg class="player__volume-img">
+                      <use xlink:href="./sprites.svg#volume"></use>
+                    </svg>
                   </div>
                   <div class="player__volume">
                     <button class="player__volume-btn"></button>
@@ -899,26 +901,13 @@
       </svg>
     </div>
 
-    <script
-      src="https://code.jquery.com/jquery-3.6.0.js"
-      integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
-      crossorigin="anonymous">
-    </script>
+
     <!-- YouTube API -->
     <script src="https://www.youtube.com/iframe_api"></script>
-    <!-- touchSwipeJquery https://github.com/mattbryson/TouchSwipe-Jquery-Plugin-->
-    <script type="text/javascript" src="JS/TouchSwipe-Jquery-Plugin-master/jquery.touchSwipe.min.js"></script>
     <!-- mobileDetectJs http://hgoebl.github.io/mobile-detect.js/ -->
     <script src="https://cdn.jsdelivr.net/npm/mobile-detect@1.4.5/mobile-detect.min.js"></script>
     
-    <script src="./JS/slider.js"></script>
-    <script src="./JS/accoVert.js"></script>
-    <script src="./JS/switcher.js"></script>
-    <script src="./JS/modal.js"></script>
-    <script src="./JS/horAcco.js"></script>
-    <script src="./JS/onePageScroll.js"></script>
-    <script src="./JS/player.js"></script>
-    <script src="./JS/map.js"></script>
+    <script src="main.min.js"></script>
     
 </body>
 </html>

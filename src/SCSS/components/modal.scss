@@ -1,0 +1,28 @@
+.modal{
+  display: none;
+  position: absolute;
+  background: #313131;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 10000;
+  align-items: center;
+  justify-content: center;
+  &__container{
+    display: flex;
+    flex-direction: column;
+    background: #fff;
+    color: black;
+    font-size: rem(18px);
+    font-weight: 500;
+    padding: rem(37px) rem(68px);
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+  &__text{
+    margin-bottom: rem(18px);
+
+  }
+}

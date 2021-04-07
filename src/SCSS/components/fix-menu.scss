@@ -1,0 +1,44 @@
+.fix-menu{
+  position: fixed;
+  top: 15%;
+  right: 3%;
+  z-index: 100;
+  @include tablets{
+    display: none;
+  }
+}
+.fix-menu__item{
+  margin-bottom: rem(5px);
+  &_active{
+    .fix-menu__link{
+      border-color: #fff;
+    }
+    
+  }
+}
+.fix-menu__link{
+  display: block;
+  width: rem(18px);
+  height: rem(18px);
+  border: 1px solid transparent;
+  border-radius: 50%;
+  position: relative;
+  &::before{
+    content: "";
+    display: block;
+    width: rem(9px);
+    height: rem(9px);
+    border-radius: 50%;
+    position: absolute;
+    background-color: #fff;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
+.fix-menu_shadowed .fix-menu__item_active .fix-menu__link{
+  border-color: black;
+}
+.fix-menu_shadowed .fix-menu__link::before{
+  background-color: black;
+}

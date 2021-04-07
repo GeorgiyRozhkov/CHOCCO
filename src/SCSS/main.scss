@@ -1,0 +1,68 @@
+$containerWidth: 940px;
+$baseFontSize: 18px;
+
+//breakpoints
+$tablets: 768px;
+$phones: 480px;
+
+//colors
+
+$darkGreen: #2E4E3F;
+$green: #497870;
+$lightBlue: #C6F7FF;
+$blue: #61C4D9;
+$black: #292929;
+$grey: #666666;
+
+
+
+@import url('https://fonts.googleapis.com/css2?family=Alegreya+Sans:wght@300;400;700;800&display=swap');
+@import "media";
+@import "layout";
+@import "./components/*.scss";
+//components
+// @import "src/scss/components/section.scss";
+// @import "src/scss/components/hero.scss";
+// @import "src/scss/components/menu.scss";
+// @import "src/scss/components/feauter.scss";
+// @import "src/scss/components/feauters.scss";
+// @import "src/scss/components/btn.scss";
+// @import "src/scss/components/header.scss";
+// @import "src/scss/components/phone-numb.scss";
+// @import "src/scss/components/hamburger.scss";
+// @import "src/scss/components/why.scss";
+// @import "src/scss/components/qualities.scss";
+// @import "src/scss/components/quality.scss";
+// @import "src/scss/components/headline.scss";
+// @import "src/scss/components/rewies.scss";
+// @import "src/scss/components/switcher.scss";
+// @import "src/scss/components/interactive-avatar.scss";
+// @import "src/scss/components/rewies-section.scss";
+// @import "src/scss/components/form.scss";
+// @import "src/scss/components/order-section.scss";
+// @import "src/scss/components/radio.scss";
+// @import "src/scss/components/fix-menu.scss";
+// @import "src/scss/components/map-section.scss";
+// @import "src/scss/components/footer-container.scss";
+// @import "src/scss/components/footer.scss";
+// @import "src/scss/components/social.scss";
+// @import "src/scss/components/overlay.scss";
+// @import "src/scss/components/slider.scss";
+// @import "src/scss/components/slide.scss";
+// @import "src/scss/components/team.scss";
+// @import "src/scss/components/modal.scss";
+// @import "src/scss/components/horAcco.scss";
+// @import "src/scss/components/horSlide.scss";
+// @import "src/scss/components/player-section.scss";
+// @import "src/scss/components/player.scss";
+
+
+
+
+
+
+
+
+
+
+

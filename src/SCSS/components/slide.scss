@@ -1,0 +1,140 @@
+.slide{
+  display: flex;
+  padding: rem(50px);
+  @include tablets{
+    flex-direction: column;
+    align-items: center;
+  }
+  &__pic{
+    align-items: center;
+    display: flex;
+    position: relative;
+    margin-right: rem(44px);
+    min-width: 49%;
+  }
+  &__subject{
+    @include tablets{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+  }
+  &__info{
+    align-items: center;
+    display: flex;
+    margin-bottom: rem(24px);
+    @include tablets{
+      justify-content: center;
+      text-align: left;
+    }
+    :last-child{
+      margin-bottom: 0;
+    }
+  }
+  &__title{
+    font-size: 36px;
+    line-height: 1.1;
+    color: $black;
+  }
+ 
+  &__desc{
+    margin-bottom: rem(23px);
+    @include tablets{
+      padding: 0 13%;
+    }
+  }
+  &__btn{
+    margin-left: 5%;
+  }
+  &__values{
+    margin-right: rem(44px);
+    &:last-child{
+      margin-right: 0;
+    }
+  }
+  &__price{
+    color: #151515;
+    font-size: 60px;
+  }
+  
+}
+.slide__drop-wrap{
+  display: inline-flex;
+  position: relative;
+}
+.slide__drop{
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: #86C3D7;
+  border-radius: 4px;
+  color: white;
+  width: rem(91px);
+  height: rem(91px);
+  margin-bottom: rem(23px);
+  @include tablets{
+    display: none;
+  }
+  &-pic{
+    fill: white;
+    margin-bottom: rem(4px);
+    max-width: 58%;
+    width: rem(46px);
+    height: rem(46px);
+  }
+  &-text{
+    font-weight: bold;
+    font-size: rem(14px);
+    text-transform: uppercase;
+  }
+}
+.slide__drop-wrap:hover .slide__dropdown{
+  display: flex;;
+  opacity: 1;
+  transition: opacity .3s;
+}
+.slide__dropdown{
+  opacity: 0;
+  position: absolute;
+  display: none;
+  width: rem(273px);
+  height: rem(344px);
+  background: rgba(255, 255, 255, 0.8);
+  backdrop-filter: blur(40px);
+  border-radius: 4px;
+  color: black;
+  font-size: rem(16px);
+  left: 100%;
+  &-list{
+    display: flex;
+    flex-direction: column;
+    padding: rem(30px);
+    justify-content: space-between;
+    position: relative;
+  }
+  &-item{
+    display: flex;
+    align-items: center;
+  }
+  &-img{
+    width: rem(32px);
+    height: rem(32px);
+    margin-right: rem(16px);
+  }
+  &-elem-last{
+    position: absolute;
+    right: 0;
+  }
+  &::before{
+  content: "";
+  position: absolute;
+  display: block;
+  left: -33%;
+  width: 33%;
+  height: 100%;
+  
+  }
+}

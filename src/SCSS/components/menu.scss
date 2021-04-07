@@ -1,0 +1,38 @@
+.menu{
+  @include tablets{
+    display: none;
+  }
+  &_modal{
+      @include tablets{
+        display: flex;
+    }
+  }
+}
+
+.menu__list{
+  display: flex;
+  margin: 0 rem(42px);
+  flex-wrap: wrap;
+  justify-content: center;
+  padding-top: rem(5px);
+  &_modal{
+    flex-direction: column;
+    align-items: center;
+  }
+}
+.menu__list_modal .menu__item{
+  margin-right: 0;
+}
+.menu__item{
+  margin-right: rem(27px);
+  margin-bottom: rem(5px);
+  &:last-child{
+    margin-right: 0;
+  }
+  :hover{
+    text-shadow:0 0 0px #fff;
+  }
+}
+.menu__link{
+  white-space: nowrap;
+}

@@ -1,0 +1,13 @@
+.contacts__phone{
+  display: flex;
+  font-size: rem(24px);
+  align-items: center;
+}
+.contacts__img{
+  margin-right: rem(6px);
+  &-elem{
+    width: rem(13px);
+    height: rem(14px);
+    fill: #fff;
+  }
+}
