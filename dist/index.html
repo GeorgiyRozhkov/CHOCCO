@@ -700,7 +700,9 @@
                     <span class="player__duration-estimate">0:00</span>
                   </div>
                   <div class="player__volume-icon">
-                    <img src="./img/svg/volume.svg" alt="volume" class="player__volume-img">
+                    <svg class="player__volume-img">
+                      <use xlink:href="./sprites.svg#volume"></use>
+                    </svg>
                   </div>
                   <div class="player__volume">
                     <button class="player__volume-btn"></button>
@@ -905,7 +907,7 @@
     <!-- mobileDetectJs http://hgoebl.github.io/mobile-detect.js/ -->
     <script src="https://cdn.jsdelivr.net/npm/mobile-detect@1.4.5/mobile-detect.min.js"></script>
     
-    <script src="main.min.js"></script>
+    <script src="main.min.js" defer></script>
     
 </body>
 </html>

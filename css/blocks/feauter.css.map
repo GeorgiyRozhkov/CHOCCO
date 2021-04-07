@@ -1,7 +1,0 @@
-{
-"version": 3,
-"mappings": "AAAA,QAAQ;EACN,OAAO,EAAE,IAAI;EACb,SAAS,EAAE,IAAI;EAEf,cAAO;IACL,WAAW,EAAE,IAAI;IACjB,IAAI,EAAE,CAAC;;AAGX,cAAc;EACZ,YAAY,EAAE,GAAG;EACjB,yBAAY;IACV,YAAY,EAAE,CAAC;;AAGnB,aAAa;EACX,KAAK,EAAE,IAAI",
-"sources": ["feauter.scss"],
-"names": [],
-"file": "feauter.css"
-}

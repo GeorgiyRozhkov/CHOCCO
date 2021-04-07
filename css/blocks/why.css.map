@@ -1,7 +1,0 @@
-{
-"version": 3,
-"mappings": "AAAA,IAAI;EACF,QAAQ,EAAE,QAAQ;EAClB,UAAU,EAAE,qDAAqD;EACjE,YAAS;IACP,OAAO,EAAE,4BAA4B;IACrC,QAAQ,EAAE,QAAQ;IAClB,MAAM,EAAE,MAAM;IACd,IAAI,EAAE,KAAK",
-"sources": ["why.scss"],
-"names": [],
-"file": "why.css"
-}
