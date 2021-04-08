@@ -1,13 +1,25 @@
 .slider{
   &__section{
     background: #F8FAF9;
+    position: relative;
+    &::before{
+      content: url("./img/png/patternSlider.svg");
+      position: absolute;
+      right: 0;
+      bottom: -17%;
+    }
+    &::after{
+      position: absolute;
+      content: url("./img/png/berrySlider.png");
+      right: 0;
+      bottom: -9%;
+    }
   }
   &__container{
     display: flex;
     position: relative;
     justify-content: center;
     align-items: center;
-
     @include phones{
       padding: 0 rem(10px);
     }

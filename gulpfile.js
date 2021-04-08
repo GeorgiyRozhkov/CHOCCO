@@ -14,6 +14,9 @@ const babel = require('gulp-babel');
 const uglify = require('gulp-uglify');
 const svgo = require('gulp-svgo');
 const svgSprite = require('gulp-svg-sprite');
+const gulpif = require('gulp-if');
+
+const env = process.env.NODE_ENV;
 
 sass.compiler = require('node-sass');
 
@@ -33,37 +36,38 @@ task("copy:sass", ()=>{
 })
 
 const styles = [
-  // "node_modules/normalize.css/normalize.css",
   "src/SCSS/main.scss"
 ];
 
 task('styles', () =>{
   return src(styles)
+  .pipe(gulpif(env === 'dev', sourcemaps.init()))
   .pipe(concat('main.min.scss', { newLine: ";"}))
   .pipe(sassGlob())
   .pipe(sass().on('error', sass.logError))
   // .pipe(px2rem()) перевел в ремы вручную
-  .pipe(autoprefixer('last 2 versions'))
-  // .pipe(gcmq()) ломает css файл
-  .pipe(cleanCSS())
-  .pipe(sourcemaps.write())
+  .pipe(gulpif(env === 'prod', autoprefixer('last 2 versions')))
+  .pipe(gulpif(env === 'prod', gcmq()))
+  .pipe(gulpif(env === 'prod', cleanCSS()))
+  .pipe(gulpif(env === 'dev', sourcemaps.write()))
   .pipe(dest('dist'));
 });
 
+
 task('img', () => {
-  return src('src/img/png/*png')
+  return src('src/img/png/*')
     .pipe(dest('dist/img/png'));
 })
 
 task('scripts', () => {
   return src('src/JS/**/*.js')
-    .pipe(sourcemaps.init())
-    .pipe(babel({
+    .pipe(gulpif(env === 'dev', sourcemaps.init()))
+    .pipe(gulpif(env === 'prod', babel({
       presets: ['@babel/env']
-    }))
+    })))
     .pipe(concat('main.min.js'))
-    .pipe(uglify())
-    .pipe(sourcemaps.write(''))
+    .pipe(gulpif(env === 'prod', uglify()))
+    .pipe(gulpif(env === 'dev', sourcemaps.write('')))
     .pipe(dest('dist'));
  });
 
@@ -97,9 +101,24 @@ task('icons', () => {
     .pipe(dest('dist'));
  });
 
-watch("./src/scss/**/*.scss", series("styles"));
-watch("./src/js/**/*.js", series("scripts"));
-watch("./*.html", series("scripts"));
-watch("./src/img/svg/*.svg", series("icons"));
+ task("watch", () => {
+  watch("./src/scss/**/*.scss", series("styles"));
+  watch("./src/js/**/*.js", series("scripts"));
+  watch("./*.html", series("copy:html"));
+  watch("./src/img/svg/*.svg", series("icons"));
+ })
 
-task("default", series("clean", parallel("copy:html", "copy:sass", "styles", "scripts", "icons", "img"), "server" ));
+task(
+  "default",
+   series(
+     "clean",
+      parallel('copy:html', 'styles', 'scripts', 'icons', 'img'),
+      parallel("watch", "server")
+  )
+);
+
+task('build',
+ series(
+   'clean',
+   parallel('copy:html', 'styles', 'scripts', 'icons', 'img'))
+); 

@@ -9,6 +9,7 @@
     background: none;
     }
   &::before{
+    z-index: 2;
     content: url("./img/png/berry3.png");
     position: absolute;
     bottom: rem(-118px);

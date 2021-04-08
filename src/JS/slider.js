@@ -24,7 +24,6 @@
 
   rightBtn.addEventListener("click", (e)=>{
     changeSlide(e, "right");
-    console.log(currentRight);
   });
   leftBtn.addEventListener("click", (e)=>{
     changeSlide(e, "left");
