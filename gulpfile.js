@@ -55,6 +55,7 @@ task('styles', () =>{
 });
 
 
+
 task('img', () => {
   return src('src/img/png/*')
     .pipe(dest('docs/img/png'));
