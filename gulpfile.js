@@ -21,17 +21,17 @@ const env = process.env.NODE_ENV;
 sass.compiler = require('node-sass');
 
 task('clean', () =>{
-  return src('dist/**/*', { read: false }).pipe(rm())
+  return src('docs/**/*', { read: false }).pipe(rm())
 });
 
 task("copy:html", ()=>{
   return src("./*.html")
-  .pipe(dest("dist"))
+  .pipe(dest("docs"))
   .pipe(reload({stream: true}));
 })
 task("copy:sass", ()=>{
   return src("src/styles/*.scss")
-  .pipe(dest("dist"))
+  .pipe(dest("docs"))
   .pipe(reload({stream: true}));
 })
 
@@ -51,13 +51,13 @@ task('styles', () =>{
   .pipe(gulpif(env === 'prod', gcmq()))
   .pipe(gulpif(env === 'prod', cleanCSS()))
   .pipe(gulpif(env === 'dev', sourcemaps.write()))
-  .pipe(dest('dist'));
+  .pipe(dest('docs'));
 });
 
 
 task('img', () => {
   return src('src/img/png/*')
-    .pipe(dest('dist/img/png'));
+    .pipe(dest('docs/img/png'));
 })
 
 
@@ -70,13 +70,13 @@ task('scripts', () => {
     .pipe(concat('main.min.js'))
     .pipe(gulpif(env === 'prod', uglify()))
     .pipe(gulpif(env === 'dev', sourcemaps.write('')))
-    .pipe(dest('dist'));
+    .pipe(dest('docs'));
  });
 
 task('server', () => {
   browserSync.init({
     server: {
-        baseDir: "./dist"
+        baseDir: "./docs"
     },
     open: false
  });
@@ -100,7 +100,7 @@ task('icons', () => {
         }
       }
     }))
-    .pipe(dest('dist'));
+    .pipe(dest('docs'));
  });
 
  task("watch", () => {
