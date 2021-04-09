@@ -6,9 +6,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>CHOCCO</title>
 
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Alegreya+Sans:wght@300;400;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="main.min.css">
-  <!-- <link rel="stylesheet" href="JS/fancybox-master/dist/jquery.fancybox.min.css"> -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css" integrity="sha512-H9jrZiiopUdsLpg94A333EfumgUBpO9MdbxStdeITo+KEIMaNfHNvwyjjDJb+ERPaRS6DpyRlKbvPUasNItRyw==" crossorigin="anonymous" />
 
   <!-- Yandex API -->
   <script src="https://api-maps.yandex.ru/2.1/?apikey=ваш API-ключ&lang=ru_RU" type="text/javascript">
@@ -285,7 +285,7 @@
                     <div class="slide__drop-wrap">
                       <div class="slide__drop">
                         <svg class="slide__drop-pic">
-                          <use xlink:href="./sprites.svg#sldeBar"></use>
+                          <use xlink:href="./sprites.svg#slideBar"></use>
                         </svg>
                         <div class="slide__drop-text">состав</div>
                       </div>
@@ -689,7 +689,10 @@
             <div class="player-section__container">
               <div class="player">
                 <div class="player__wrap">
-                  <div id="yt-player" class="player__elem"></div>
+                  <div id="YTplayer" class="player__elem"></div>
+                  <!-- <video width="665", height="400" class="video" preload="auto" >
+                    <source src="./video/rocky.mp4" type="video/mp4">
+                  </video> -->
                   <div class="player__splash"></div>
                 </div>
                 <div class="player__controls">
@@ -907,12 +910,10 @@
       </svg>
     </div>
 
-
     <!-- YouTube API -->
     <script src="https://www.youtube.com/iframe_api"></script>
     <!-- mobileDetectJs http://hgoebl.github.io/mobile-detect.js/ -->
     <script src="https://cdn.jsdelivr.net/npm/mobile-detect@1.4.5/mobile-detect.min.js"></script>
-    
     <script src="main.min.js"></script>
     
 </body>

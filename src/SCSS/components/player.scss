@@ -37,7 +37,7 @@
   width: 100% ;
   height: 100% ;
   position: absolute;
-  top: -1px;
+  top: 0;
   left: 0;
   content: "";
   background: url("./img/png/player.png") center center no-repeat;
@@ -49,7 +49,8 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    content: url("./sprites.svg#play");
+    background: url("./sprites.svg#play") center center no-repeat;
+    content: "";
     z-index: 3;
   }
 

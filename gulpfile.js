@@ -36,6 +36,7 @@ task("copy:sass", ()=>{
 })
 
 const styles = [
+  'node_modules/normalize.css/normalize.css',
   "src/SCSS/main.scss"
 ];
 
@@ -58,6 +59,7 @@ task('img', () => {
   return src('src/img/png/*')
     .pipe(dest('dist/img/png'));
 })
+
 
 task('scripts', () => {
   return src('src/JS/**/*.js')
