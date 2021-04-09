@@ -85,8 +85,13 @@ font-weight: bold;
 @include phones{
   position: absolute;
   bottom: -6%;
-  left: 32%;
 }
+}
+.rewies__author-wrap{
+  @include phones{
+    display: flex;
+    justify-content: center;
+  }
 }
 .rewies__switcher{
   display: flex;
