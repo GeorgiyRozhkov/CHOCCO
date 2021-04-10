@@ -1,4 +1,4 @@
-;(function(){
+
 const playerContainer = $(".player");
 const playerWrap = document.querySelector(".player__wrap");
 const playerVideo = document.querySelector(".player__video");
@@ -162,4 +162,3 @@ function onYouTubeIframeAPIReady() {
 }
 
 eventsInit();
-})();
