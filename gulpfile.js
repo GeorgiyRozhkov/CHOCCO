@@ -47,7 +47,7 @@ task('styles', () =>{
   .pipe(sass().on('error', sass.logError))
   // .pipe(px2rem()) перевел в ремы вручную
   .pipe(gulpif(env === 'prod', autoprefixer('last 2 versions')))
-  // .pipe(gulpif(env === 'prod', gcmq()))
+  // .pipe(gulpif(env === 'prod', gcmq())) 
   .pipe(gulpif(env === 'prod', cleanCSS()))
   .pipe(gulpif(env === 'dev', sourcemaps.write()))
   .pipe(dest('docs'));
