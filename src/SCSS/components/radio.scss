@@ -25,7 +25,6 @@
   margin-bottom: rem(21px);
   &:last-child{
     margin-right: 0;
-    margin-bottom: 0;
   }
   @include phones{
     margin-bottom: rem(10px);

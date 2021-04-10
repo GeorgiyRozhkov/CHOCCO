@@ -17,12 +17,20 @@
   background: 
   url("./img/png/leaf3.png") left 4% bottom 10% no-repeat,
   url("./img/png/leaf5.png") right 4% top 10% no-repeat;
+  @include tablets{
+    background: 
+    url("./img/png/leaf3.png") left -4% bottom 10% no-repeat,
+    url("./img/png/leaf5.png") right 4% top 10% no-repeat;
+  }
   &::before{
     z-index: 2;
     content: url("./img/png/berryPlayer.png");
     position: absolute;
     right: 0;
     bottom: -11%;
+    @include tablets{
+    bottom: -18%;
+    }
   }
 }
 .player__wrap{
@@ -49,8 +57,7 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    background: url("./sprites.svg#play") center center no-repeat;
-    content: "";
+    content: url("./sprites.svg#play");
     z-index: 3;
   }
 
@@ -125,7 +132,7 @@
 }
 .player__duration{
   position: absolute;
-  left: 65%;
+  left: 63%;
   @include tablets{
     display: none;
   }
