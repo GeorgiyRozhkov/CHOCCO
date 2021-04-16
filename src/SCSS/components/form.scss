@@ -1,5 +1,6 @@
 .form{
   display: flex;
+  
   @include tablets{
     flex-direction: column;
     padding: 0 19%;
@@ -9,6 +10,7 @@
   }
 }
 .form__col{
+  z-index: 4;
   flex: 1;
   margin-right: rem(27px);
   @include tablets{
