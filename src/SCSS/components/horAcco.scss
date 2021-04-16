@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 .horAcco__section{
   background: url('./img/png/horAccoBackground1.png') center center;
   background-size: cover;
@@ -31,37 +31,3 @@
   z-index: 2;
 
 }
-=======
-.horAcco__section{
-  background: url('./img/png/horAccoBackground1.png') center center;
-  background-size: cover;
-  background-color: rgba($color: #000000, $alpha: 0.8);
-  position: relative;
-}
-.horAcco__wrap{
-  display: flex;
-  background-size: cover;
-  height: 100%;
-}
-.horAcco__container{
-  height: 100%;
-  width: 100%;
-  max-width: initial;
-}
-.horAcco__title{
-  text-transform: uppercase;
-  font-size: rem(48px);
-  color: #fff;
-  font-weight: bold;
-  margin-top: 10%;
-  position: absolute;
-  left: 2%;
-}
-.horAcco__list{
-  display: flex;
-  margin-left: auto;
-  max-height: 100%;
-  z-index: 2;
-
-}
->>>>>>> d880d260b89f7b7e989389edeb6ef17caec40ec8

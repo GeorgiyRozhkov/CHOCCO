@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 .order-section{
   position: relative;
   background: url("./img/png/berryBG.png") center center no-repeat;
@@ -19,25 +19,4 @@
     bottom: 3%;
     left: 2%;
   }
-=======
-.order-section{
-  position: relative;
-  background: url("./img/png/berryBG.png") center center no-repeat;
-  .section__title{
-    color: $darkGreen;
-    margin-bottom: rem(50px);
-  }
-  &::before{
-    position: absolute;
-    content: url("./img/png/leaf4.png");
-    bottom: 8%;
-    right: 6%;
-  }
-  &::after{
-    position: absolute;
-    content: url("./img/png/berry6.png");
-    bottom: 3%;
-    left: 2%;
-  }
->>>>>>> d880d260b89f7b7e989389edeb6ef17caec40ec8
 }

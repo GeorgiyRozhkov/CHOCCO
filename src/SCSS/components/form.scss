@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 .form{
   display: flex;
   
@@ -74,79 +74,4 @@
     display: flex;
     justify-content: center;
   }
-=======
-.form{
-  display: flex;
-  @include tablets{
-    flex-direction: column;
-    padding: 0 19%;
-  }
-  @include phones{
-    padding: 0;
-  }
-}
-.form__col{
-  flex: 1;
-  margin-right: rem(27px);
-  @include tablets{
-    margin-right: 0;
-  }
-  &:last-child{
-    margin-right: 0;
-  }
-}
-.form__row{
-  display: flex;
-  margin-bottom: rem(10px);
-}
-.form__block{
-  flex: 1;
-  margin-right: rem(17px);
-  @include tablets{
-    margin-right: rem(23px);
-  }
-  &:last-child{
-    margin-right: 0;
-  }
-}
-.form__input{
-  width: 100%;
-  border: 3px solid transparent;
-  padding: rem(18px) rem(12px);
-  border-radius: 4px;
-  @include tablets{
-    padding: rem(8px) rem(10px);
-  }
-  &:focus{
-    border-color: #DEE2BD;
-    outline: none;
-  }
-  &_textarea{
-    height: rem(152px);
-    resize: none;
-    width: 100%;
-    @include tablets{
-      height: rem(82px);
-    }
-  }
-}
-.form__controls{
-  display: flex;
-  flex-wrap: wrap;
-  @include phones{
-    justify-content: center;
-    margin-bottom: rem(10px);
-  }
-}
-.form__radio{
-  margin-bottom: rem(45px);
-  padding-left: rem(7px);
-  padding-top: rem(21px);
-}
-.form__btns{
-  @include tablets{
-    display: flex;
-    justify-content: center;
-  }
->>>>>>> d880d260b89f7b7e989389edeb6ef17caec40ec8
 }
