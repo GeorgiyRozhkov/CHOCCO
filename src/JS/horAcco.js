@@ -47,8 +47,6 @@ const openItem = item =>{
     textBlock.width(reqWidth.textContainer);
     item.addClass("active");
     hidden.width(reqWidth.container);
-    console.log(mesureWidth(item));
-
 }
 $(".horSlide__preview").on("click", e =>{
   e.preventDefault();

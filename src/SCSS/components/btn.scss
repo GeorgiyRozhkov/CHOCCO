@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 .btn{
   font-family: "Alegreya Sans", Helvetica, serif;
   border: none;
@@ -34,4 +35,42 @@
       color: #497870;
     }
   }
+=======
+.btn{
+  font-family: "Alegreya Sans", Helvetica, serif;
+  border: none;
+  cursor: pointer;
+  display: inline-block;
+  font-weight: 800;
+  font-size: rem(16px);
+  text-transform: uppercase;
+  text-decoration: none;
+  border-radius: rem(100px);
+  padding: rem(19px) rem(43px);
+  &_color_white{
+    background: #fff;
+    color: $darkGreen;
+    &:hover{
+      background: $darkGreen;
+      color: #fff;
+    }
+  }
+  &_color_green{
+    background: #2E4E3F;
+    color: #fff;
+    &:hover{
+      background: #fff ;
+    color: #2E4E3F;
+    }
+  }
+  &_color_transparent{
+    background: transparent;
+    color: black;
+    text-transform: none;
+    padding-left: rem(10px);
+    &:hover{
+      color: #497870;
+    }
+  }
+>>>>>>> d880d260b89f7b7e989389edeb6ef17caec40ec8
 }
